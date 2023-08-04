@@ -1,0 +1,335 @@
+.Body {
+  background-color: white;
+  background-image: url('https://www.caribbeannationalweekly.com/wp-content/uploads/2020/09/Bacchanal-Jamaica.jpg');
+}
+
+.headerwhole {
+  background-color: #ffcc00;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.logo {
+  height: 200px;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.Pt {
+  font-size: 28px;
+  margin: 10px 0;
+  color: rgb(0, 0, 0);
+  display:inline;
+}
+
+.nava{
+  scroll-behavior: smooth;
+  color: black;
+  font-weight: bold;
+  font-family:cursive;
+  text-decoration: none;
+  position: relative;
+  text-decoration: none;
+  letter-spacing: .5px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.nava::before,
+.nava::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.nava::after{
+  left: 0;
+  bottom: -10px;
+}
+.nava::before{
+  right: 0;
+  top: -10px;
+}
+.nava:hover::after,
+.nava:hover::before{
+  width: 100%;
+
+}
+nav{
+  padding-top: 15px;
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+hr {
+  border-color: white;
+}
+
+.sec1,
+.a1,
+.a2{
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 10px solid #d79f11;
+}
+
+.h21,
+.h22,
+.h31,
+.h32,
+.fee {
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.p1a,
+.a1 p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333333;
+}
+.p1a{
+  font-size: large;
+}
+.arte1{
+  font-size: large;
+}
+.sect li,
+.payop li,
+.feeol li {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #333333;
+}
+.contact {
+  background-color: #ffcc00;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.fth3 {
+  margin-top: 10px;
+  color: black;
+}
+
+.social1,
+.social3,
+.social4 {
+  width: 30px;
+  margin: 0 5px;
+}
+.social1:hover{
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+}
+.social2:hover{
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+}
+.social3:hover{
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+}
+.social4:hover{
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+}
+
+/* Additional Styling */
+.sec1::before,
+.a1::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-color: rgba(39, 19, 19, 0.3);
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.section-title,
+.a2h2 {
+  background-color: #ffcc00;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;;
+  border-radius: 5px;
+}
+
+.section-title h2{
+  margin: 0;
+  font-size: 24px;
+  color: black;
+}
+.a2h2{
+  margin: 0;
+  font-size: 24px;
+  color: black;
+}
+.highlight {
+  background-color: #ffcc99;
+  color: #333333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .logo {
+    height: 150px;
+  }
+}
+.columns{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  margin: 5px 0;
+  font-size: 17px;
+}
+.column{
+  flex: 1;
+  border: 1px solid #666;
+  border: 5px solid #d79f11;
+  margin: 10px;
+  padding: 10px;
+  background: #fbc53e;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.column:first-child:hover{
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+  margin-left: 0;
+}
+.column:nth-child(2):hover{
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+  margin-left: 0;
+}
+.column:last-child:hover{
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+  margin-left: 0;
+}
+@media screen and (max-width: 980px){
+  .columns .column{
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+  .columns .column:last-child{
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+  .columns .column:nth-last-child(2){
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+}
+@media screen and (max-width: 680px){
+  .columns .column{
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+  
+.u1{
+  color: #d79f11;
+}
+.concon{
+  font-size: 19px;
+}
+.headerwhole{
+  border: 10px solid #d79f11
+}
+.sec1{
+  border: 10px solid #d79f11
+}
+.s1p1,
+.h32,
+.h12j,
+.fees,
+.payop,
+.p12{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.column:hover{
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+.art2t{
+  font-size: larger;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.image-container {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+  border: 2px groove black;
+  border-radius: 15px;
+  background: #1f3d4738;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#appim {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+#footer-ins{
+  scroll-behavior: smooth;
+}
